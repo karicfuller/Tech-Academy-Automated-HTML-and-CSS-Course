@@ -1,0 +1,14 @@
+p {
+    font-size: x-large;
+    font-style: bold;
+    font-family: Tahoma;
+}
+
+ol {
+    font-style: italic;
+}
+
+ul {
+    font-style: underline;
+    list-style-type: square;
+}
