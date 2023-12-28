@@ -18,13 +18,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link text-light" href="#">Abount</a>
+              <a class="nav-link text-light" href="#About">Abount</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link text-light" href="#">Showtimes</a>
+              <a class="nav-link text-light" href="#Show">Showtimes</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link text-light" href="#">Deals</a>
+              <a class="nav-link text-light" href="#Deal">Deals</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -48,7 +48,7 @@
             </div>
             <div class="col-sm">
 
-                <h3>Accomodations</h3>
+                <h3 id="About">Accomodations</h3>
                 <p>Located in the beautiful downtown San Luis Obispo, CA, our reels have been spinning for decades.</p>
                 <p>Showing our guests a great time is our passion and seeing their smiles is our pleasure!</p>
                 <p>All of our auditoriums are equipped with brand new Christie 3D&reg; sound systems!</p>
@@ -73,12 +73,62 @@
         </div>
       </div>
 
+    <!--Showtimes-->  
+    <div class="card-group">
+        <div class="card">
+          <img src="./Bootstrap4_Project/img/pitch_perfect.jpg" class="card-img-top" alt="Pitch Perfect">
+          <div class="card-body">
+            <h5 class="card-title">Pitch Perfect</h5>
+            <p class="card-text">Beca, a freshman at Barden University, is cajoled
+                into joining The Bellas, her school's all-girls singing group. Injecting
+                some much needed energy into their repertoire, The Bellas take on their male
+                rivals in a campus competition.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Bootstrap4_Project/img/remember_the_titans.jpeg" class="card-img-top" alt="Remember the Titans">
+          <div class="card-body">
+            <h5 class="card-title">Remember the Titans</h5>
+            <p class="card-text">A high school football team is forced to integrate, bringing 
+                together players from different racial backgrounds. Coach Boone, played by Denzel Washington, takes 
+                charge and helps the team overcome their differences and work together.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Bootstrap4_Project/img/the_intern.jpg" class="card-img-top" alt="The Intern">
+          <div class="card-body">
+            <h5 class="card-title">The Intern</h5>
+            <p class="card-text">A retired 70-year-old widower, Ben (played by Robert De Niro), is bored with retired life. 
+                He applies to a be a senior intern at an online fashion retailer and gets the position. The founder of the 
+                company is Jules Ostin (Anne Hathaway), a tireless, driven, demanding, dynamic workaholic.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+            
+
+
+
+
+
+    <!--Showtimes-->
+
       <div class="text-center">
             <form>
                 <h1 class="text-primary my-5">Sign up for Movie Club Rewards</h1>
-                <div class="form-group">
+                    <div id="Deal">
+                        <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
+                        </div>    
+                    </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -116,3 +166,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+
+
+
+
+<div class="container">
+    <h3 id="Show">Showtimes</h3>
+    <div class="row">
+        <div class="col-sm">
+            <img class="col-sm" src="./Bootstrap4_Project/img/pitch_perfect.jpg" alt="Pitch Perfect">
+            <p class="col-sm">Beca, a freshman at Barden University, is cajoled
+                into joining The Bellas, her school's all-girls singing group. Injecting
+                some much needed energy into their repertoire, The Bellas take on their male
+                rivals in a campus competition.</p>
+    </div>
+    <div class="col-sm">
+        <img class="col-sm" src="./Bootstrap4_Project/img/remember_the_titans.jpeg" alt="Remember the Titans">
+        <p class="col-sm">A high school football team is forced to integrate, bringing 
+            together players from different racial backgrounds. Coach Boone, played by Denzel Washington, takes 
+            charge and helps the team overcome their differences and work together.</p>
+    </div>
+        <div class="col-sm">
+        <img class="col-sm" src="./Bootstrap4_Project/img/the_intern.jpg" alt="The Intern">
+        <p class="col-sm">A retired 70-year-old widower, Ben (played by Robert De Niro), is bored with retired life. 
+            He applies to a be a senior intern at an online fashion retailer and gets the position. The founder of the 
+            company is Jules Ostin (Anne Hathaway), a tireless, driven, demanding, dynamic workaholic.</p>
+            
+        </div>
+    </div>
+</div>      
