@@ -10,6 +10,7 @@
         margin-right: auto;
         filter: saturate(300%);
         border-radius: 50px;
+        margin-top: 50px;
     }
     footer {
         text-align: center;
@@ -22,17 +23,137 @@
         border: 2px dashed black;
         padding: 4px;
     }
+
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .top-right {
+        position: absolute;
+        top: 8px;
+        right: 50px;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: pink;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
     
+    .navbar a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        
+    }
+
+    .navbar a:hover {
+        background: lightgreen;
+        color: black;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 50%;
+        padding: 10px;
+        height: 300px;
+        width: 200%;
+    }
+
+    h3 {
+        color: white;
+    }
+
+    p {
+        color: red;
+    }
+
+    .main {
+        margin-top: 30px;
+    }
+
+    a:hover {
+        background-color: aquamarine;
+    }
+
+    .picture {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .container:hover .picture {
+        opacity: 0.3;
+    }
+
+    .container:hover .middle {
+        opacity: 1;
+    }
+
+    .text {
+        background-color: #04aa6d;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+    }
+
     </style>
     </head>
     <body>
 
-        <h2>Tokyo, Japan</h2>
-        <p>We went to Tokyo, Japan in October 2023. It was a wonderful experience.</p>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+        </div>
 
-        <img src="./img/DowntownKyoto.jpg" alt="Kyoto, Japan">
+        <div class="main">
+            <p>Japan was amazing!</p>
+        </div>
 
-        <h2>Kari's Friends</h2>
+        <div class="container">
+            <img src="./img/DowntownKyoto.jpg" class="picture" style="width: 50%" alt="Kyoto, Japan">
+            <div class="middle">
+                <div class="text">Japan!</div>
+            </div>
+        </div>
+        <h2>Contacts</h2>
         <table id="friends">
             <tr>
                 <th>Name</th>
@@ -58,6 +179,30 @@
                 <td>Hillsboro, OR</td>
             </tr>
         </table>
+
+        <div class="container">
+            <img src="./img/Osaka.jpg" alt="Osaka">
+            <div class="top-right">Osaka, Japan</div>
+        </div>
+
+        <h2>Columns</h2>
+        <div class="row">
+            <div class="column" style="background-color: palevioletred;">
+                <h3>Column 1</h3>
+                <p>This is some text in column 1.</p>
+            </div>
+            <div class="column" style="background-color: pink;">
+                <h3>Column 2</h3>
+                <p>This is some text in column 2.</p>
+            </div>
+        </div>
+
+        <div class="container">
+        <video width="320" height="240" controls autoplay muted loop>
+            <source src="./video.mp4" type="video/mp4">
+            <div class="centered">Listen!</div>
+        </video>
+        </div>
 
         <footer>
             <p>This page was created by Kari Fuller</p>
