@@ -67,7 +67,7 @@ img {
     filter: grayscale(75%); /* This rids our pictures of 75% of their color */
     border-radius: 8px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
-    height: 340px; /* Sets the height of all images */
+    height: 320px; /* Sets the height of all images */
     display: block; /* By specifying block display we can ensure our images are able to be centered */
     margin-left: auto; /* In combination with "margin-right: auto" this centers all images */
     margin-right: auto;
@@ -259,7 +259,7 @@ input[type=submit] {
     background-color: black; /* Sets the background color of the submit button to black */
     color: white; /* Sets the font color of the Submit button to white */
     font-weight: bold; /* Makes the font of the submit button bold */
-    padding: 12px 20px; /* Adds padding to the submit button */
+    padding: 10px 20px; /* Adds padding to the submit button */
     border: none; /* Removes the border from the submit button */
     border-radius: 4px; /* Gives the submit button the same rounded corners as the text boxes */
     cursor: pointer; /* Changes the cursor to pointer when over the submit button */
@@ -268,7 +268,7 @@ input[type=submit] {
     margin-right: auto;
     font-family: Perpetua, Rockwell Extra Bold;
 }
-
+s
 /* Hover effect for submit button */
 input[type=submit]:hover {
     background-color: white; /* Turns the background of the submit button white when the user hovers over it */
@@ -279,9 +279,9 @@ input[type=submit]:hover {
 
 /* Form element */
 form {
-    border-radius: 5px; /* Rounds the corners of the contact form */
+    /*border-radius: 0px; /* Rounds the corners of the contact form */
     background-color: #f2f2f2; 
-    padding: 10px; /* Adds padding to the contact form */
+    /*padding: 0px; /* Adds padding to the contact form */
     font-family: "Trebuchet MS", Optima;
 }
 /***** END OF CONTACT FORM STYLING *****/
