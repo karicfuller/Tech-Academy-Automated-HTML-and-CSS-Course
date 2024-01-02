@@ -15,14 +15,15 @@ h1 {
 
 /* Heading 1 element hover effect */
 h1:hover {
-    filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
+    filter: grayscale(8%); /* Adds a slightly gray filter to the h1 headings when hovered over */
     transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
     transition: transform 1s; /* This causes the transformation to last 1 second */
 }
 
 /* Styling for portfolio title text */
 .white-text {
-    color: #fff; /* This is used to change the color of the portfolio title text */
+    color: palevioletred; /* This is used to change the color of the portfolio title text */
+    font-style: italic;
 }
 
 /* Paragraph elements */
@@ -202,7 +203,7 @@ footer {
     padding: 10px;
     padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
     height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
-    background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
+    background-color: pink; /* Sets the background color of the columns with class Column_1 */
 }
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
@@ -280,7 +281,7 @@ input[type=submit]:hover {
 /* Form element */
 form {
     /*border-radius: 0px; /* Rounds the corners of the contact form */
-    background-color: #f2f2f2; 
+    background-color: pink; 
     /*padding: 0px; /* Adds padding to the contact form */
     font-family: "Trebuchet MS", Optima;
 }
